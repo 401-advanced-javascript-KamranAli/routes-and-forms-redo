@@ -1,6 +1,12 @@
 import React from 'react';
+import Header from './Header/HeaderComp';
+import Footer from './Footer/FooterComp';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <Header />
+      <Footer />
+    </>
+  );
 }
-  
