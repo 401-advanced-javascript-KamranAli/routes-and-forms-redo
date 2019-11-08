@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const HomeCard = ({ name, handleSubmit, handleChange }) => {
+const Form = ({ name, handleSubmit, handleChange }) => {
 
   return (
     <>
@@ -15,10 +15,10 @@ const HomeCard = ({ name, handleSubmit, handleChange }) => {
 
 };
 
-HomeCard.propTypes = {
+Form.propTypes = {
   name: PropTypes.string,
   handleSubmit: PropTypes.func,
   handleChange: PropTypes.func
 };
 
-export default HomeCard;
+export default Form;
