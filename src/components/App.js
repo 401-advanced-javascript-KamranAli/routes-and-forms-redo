@@ -6,6 +6,8 @@ import {
 import Header from './Header/HeaderComp';
 import Footer from './Footer/FooterComp';
 import HomeContainer from '../containers/HomeContainer';
+import ListContainer from '../containers/ListContainer';
+import DetailsContainer from '../containers/DetailsContainer';
 
 export default function App() {
   return (
@@ -13,8 +15,8 @@ export default function App() {
       <Header />
       <Switch>
         <Route exact path="/" component={HomeContainer} />
-        <Route path="/list/:name" component={list} />
-        <Route path="/details/:id" component={details} />
+        <Route path="/list/:name" component={ListContainer} />
+        <Route path="/details/:id" component={DetailsContainer} />
       </Switch>
       <Footer />
     </Router>

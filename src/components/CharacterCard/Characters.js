@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import CharacterCard from './CharacterCard';
 
-const Characters = ({ character }) => {
-  const characterElements = character.map((characterItem, i) => {
-    <li key={characterItem.id || i}>
-      <CharacterCard {...characterItem} />
+const Characters = ({ characters }) => {
+  const characterElements = characters.map((character, i) => {
+    <li key={character._id || i}>
+      <CharacterCard {...character} />
     </li>;
   });
 
@@ -17,7 +17,7 @@ const Characters = ({ character }) => {
 };
 
 Characters.propTypes = {
-  character: PropTypes.arrayOf(PropTypes.shape({
+  characters: PropTypes.arrayOf(PropTypes.shape({
     _id: PropTypes.string,
     photoUrl: PropTypes.string,
     name: PropTypes.string

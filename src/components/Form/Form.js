@@ -5,7 +5,7 @@ const Form = ({ name, handleSubmit, handleChange }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" placeholder="Find a Character" onChange={handleChange} value={name}>
+      <input type="text" placeholder="Find a Character" name="name" onChange={handleChange} value={name}>
       </input>
       <button>Find</button>
     </form>
