@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import CharacterCard from './CharacterCard';
 
 const Characters = ({ character }) => {
-  const characterElements = character.map(characterItem => {
-    <li key={characterItem.id}>
+  const characterElements = character.map((characterItem, i) => {
+    <li key={characterItem.id || i}>
       <CharacterCard {...characterItem} />
     </li>;
   });
