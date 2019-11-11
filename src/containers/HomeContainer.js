@@ -44,7 +44,7 @@ export default class HomeContainer extends Component {
   render() {
     return (
       <>
-        <CharacterCard id={this.state.character.id} name={this.state.character.name} image={this.state.character.image} />
+        <CharacterCard _id={this.state.character._id} name={this.state.character.name} photoUrl={this.state.character.photoUrl} />
         <button onClick={this.handleOnClick}>Get a random Character</button>
         <Form name={this.state.name} handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
       </>

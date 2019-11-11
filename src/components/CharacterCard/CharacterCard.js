@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CharacterCard = ({ id, image, name }) => {
+const CharacterCard = ({ _id, photoUrl, name }) => {
 
   return (
-    <div key={id}>
-      <img src={image} />
+    <div key={_id}>
+      <img src={photoUrl} />
       <p>{name}</p>
     </div>
   );
 };
 
 CharacterCard.propTypes = {
-  id: PropTypes.string,
-  image: PropTypes.string,
+  _id: PropTypes.string,
+  photoUrl: PropTypes.string,
   name: PropTypes.string
 };
 

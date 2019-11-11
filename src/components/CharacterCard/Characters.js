@@ -18,8 +18,8 @@ const Characters = ({ character }) => {
 
 Characters.propTypes = {
   character: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string,
-    image: PropTypes.string,
+    _id: PropTypes.string,
+    photoUrl: PropTypes.string,
     name: PropTypes.string
   }))
 };
